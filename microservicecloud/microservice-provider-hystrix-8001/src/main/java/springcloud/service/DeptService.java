@@ -1,0 +1,16 @@
+package springcloud.service;
+
+import springcloud.entities.Dept;
+
+import java.util.List;
+
+public interface DeptService
+{
+	public boolean add(Dept dept);
+
+	public Dept get(Long id);
+
+	public List<Dept> list();
+
+	public void del(String id);
+}
