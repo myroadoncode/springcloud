@@ -13,7 +13,6 @@ public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptCli
 	@Override
 	public DeptClientService create(Throwable throwable)
 	{
-		System.out.println("***************");
 		return new DeptClientService() {
 			@Override
 			public Dept get(long id)

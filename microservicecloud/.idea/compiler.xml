@@ -9,6 +9,7 @@
         <module name="microservice-api" />
         <module name="microservice-consumer-80" />
         <module name="microservice-consumer-feign" />
+        <module name="microservice-consumer-hystrix-dashboard" />
         <module name="microservice-eureka-7001" />
         <module name="microservice-eureka-7002" />
         <module name="microservice-eureka-7003" />

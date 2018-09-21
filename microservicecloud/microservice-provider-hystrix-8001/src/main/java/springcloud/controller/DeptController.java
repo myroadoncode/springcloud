@@ -25,9 +25,11 @@ public class DeptController
 	}
 
 	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
+	// 服务熔断
 //	@HystrixCommand(fallbackMethod = "processHystrix_Get")
 	public Dept get(@PathVariable("id") Long id) throws Exception {
         Dept dept = service.get(id);
+        // 异常情况以null为例
         if (null == dept) {
             throw new Exception();
         }

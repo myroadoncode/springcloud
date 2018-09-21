@@ -15,7 +15,7 @@ import java.util.List;
 
 新建
 
-一个实现了FallbackFactory接口的类DeptClientServiceFallbackFactory
+一个实现了FallbackFactory接口的类DeptClientServiceFallbackFactory实现服务降级处理
  * @author zzyy
  * @date 2018年4月21日
  */
