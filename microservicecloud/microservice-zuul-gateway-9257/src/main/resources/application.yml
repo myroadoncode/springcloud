@@ -1,0 +1,28 @@
+server:
+  port: 9257
+
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+  instance:
+    instance-id: gateway-9527
+    prefer-ip-address: true
+
+info:
+  app.name: microservicecloud
+  company.name: alibaba
+  build.artifactId: microservicecloud
+  build.version: 1.0-SNAPSHOT
+
+zuul:
+  routes:
+    my.serviceId: microservicecloud
+    my.path: /mydept/**
+#  ignored-services: microservicecloud
+  ignored-services: "*"
+  prefix: /test

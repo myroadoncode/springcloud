@@ -17,6 +17,7 @@
         <module name="microservice-provider-8002" />
         <module name="microservice-provider-8003" />
         <module name="microservice-provider-hystrix-8001" />
+        <module name="microservice-zuul-gateway-9257" />
       </profile>
     </annotationProcessing>
   </component>
